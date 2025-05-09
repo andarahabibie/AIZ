@@ -1,0 +1,28 @@
+Start
+  |
+  V
+[Admin Dashboard]
+  |
+  V
++-----------------------------+
+|      View Laporan List      |
++-----------------------------+
+  |
+  V
++-----------------------------+
+| Select Laporan to Manage    |
++-----------------------------+
+  |
+  V
++-----------------------------+
+| Approve/Reject Laporan      |
++-----------------------------+
+  |
+  V
+[Update Laporan Status in DB]
+  |
+  V
+[Notify User (Optional)]
+  |
+  V
+End

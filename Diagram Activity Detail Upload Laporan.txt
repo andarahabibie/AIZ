@@ -1,0 +1,36 @@
+Start
+  |
+  V
+[User Dashboard]
+  |
+  V
++-----------------------------+
+|       Upload Laporan        |
++-----------------------------+
+  |
+  V
+[Select File (PDF/JPG/etc.)]
+  |
+  V
+[Submit File]
+  |
+  V
++-----------------------------+
+|    File Validation          |
+| (Check Format & Size)       |
++-----------------------------+
+  |
+  V
++-----------------------------+
+| Save File to Storage        |
+| Update Database Record      |
++-----------------------------+
+  |
+  V
+[Notify Admin (Optional)]
+  |
+  V
+[Show Success Message]
+  |
+  V
+End

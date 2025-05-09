@@ -1,0 +1,29 @@
+Start
+  |
+  V
+[User/Admin Dashboard]
+  |
+  V
++-----------------------------+
+|       Open Chat Box         |
++-----------------------------+
+  |
+  V
+[Compose Message]
+  |
+  V
+[Send Message]
+  |
+  V
++-----------------------------+
+| Save Message to Database    |
++-----------------------------+
+  |
+  V
+[Real-Time Notification]
+  |
+  V
+[Display Message in Chat Box]
+  |
+  V
+End

@@ -1,0 +1,28 @@
+Start
+  |
+  V
+[Superuser/Admin Dashboard]
+  |
+  V
++-----------------------------+
+| Add/Delete User/Admin       |
++-----------------------------+
+  |
+  V
+[Input User Details]
+  |
+  V
++-----------------------------+
+| Validate Input              |
++-----------------------------+
+  |
+  V
++-----------------------------+
+| Save User to Database       |
++-----------------------------+
+  |
+  V
+[Notify User (Optional)]
+  |
+  V
+End
