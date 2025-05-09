@@ -1,0 +1,60 @@
+Start
+  |
+  V
+[User Access Website]
+  |
+  V
++-----------------------------+
+|      Login/Register?        |
++-----------------------------+
+  |           |               |
+  V           V               V
+[Login]   [Register]      [Guest Access]
+  |           |               |
+  V           V               V
+[Validate Credentials]  [Create New User]  [Redirect to Login]
+  |           |               |
+  V           V               V
+[Role Check]          [Redirect to Login]
+  |
+  V
++-----------------------------+
+|         Role-Based Flow     |
++-----------------------------+
+  |
+  V
++-----------------------------+       +-----------------------------+       +-----------------------------+
+|        Superuser            |       |          Admin             |       |           User              |
+|                             |       |                             |       |                             |
+| - Add/Delete Admin          |       | - Add/Delete User          |       | - Upload Laporan            |
+| - Manage All Data           |       | - View/Edit Laporan        |       | - View Laporan Status       |
+|                             |       | - Chat with User           |       | - Chat with Admin           |
++-----------------------------+       +-----------------------------+       +-----------------------------+
+  |                                     |                                     |
+  V                                     V                                     V
++-----------------------------+       +-----------------------------+       +-----------------------------+
+| Add/Delete Admin            |       | Add/Delete User            |       | Upload Laporan              |
+|                             |       |                             |       |                             |
+| [Input Admin Details]       |       | [Input User Details]       |       | [Select File]               |
+| [Validate Input]            |       | [Validate Input]           |       | [Submit File]               |
+| [Save Admin to DB]          |       | [Save User to DB]          |       | [Validate File]             |
+|                             |       |                             |       | [Save File to Storage]      |
+| [Notify Admin/User]         |       | [Notify User]              |       | [Update DB Record]          |
++-----------------------------+       +-----------------------------+       +-----------------------------+
+  |                                     |                                     |
+  V                                     V                                     V
++-----------------------------+       +-----------------------------+       +-----------------------------+
+| Manage Laporan              |       | Manage Laporan              |       | Chat with Admin             |
+|                             |       |                             |       |                             |
+| [View Laporan List]         |       | [View Laporan List]         |       | [Open Chat Box]             |
+| [Approve/Reject Laporan]    |       | [Approve/Reject Laporan]    |       | [Compose Message]           |
+| [Update Status in DB]       |       | [Update Status in DB]       |       | [Send Message]              |
+|                             |       |                             |       | [Save Message to DB]        |
+| [Notify User]               |       | [Notify User]               |       | [Display Message]           |
++-----------------------------+       +-----------------------------+       +-----------------------------+
+  |                                     |                                     |
+  V                                     V                                     V
+[Logout]                           [Logout]                           [Logout]
+  |                                     |                                     |
+  V                                     V                                     V
+End                                   End                                   End
